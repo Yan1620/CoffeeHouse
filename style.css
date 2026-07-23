@@ -20,7 +20,7 @@ header{
     position: sticky;
     top: 0;
     flex-wrap: wrap;
-     z-index: 1000;
+    z-index: 1000;
 }
 
 a{
@@ -330,6 +330,10 @@ input{
     display: block;
 }
 
+input:focus{
+    border: 2px solid #2C1810;
+}
+
 textarea {
     width: 70%;
     padding: 15px;
@@ -368,4 +372,129 @@ form{
 .ssilki{
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 768px){
+    header{
+        flex-direction: column;
+        height: 100px;
+    }
+
+    #title{
+        font-size: 26px;
+    }
+
+    nav{
+        margin-bottom: 10px;
+        gap: 20px;
+    }
+
+    .nav{
+        font-size: 17px;
+    }
+
+    #hero{
+        font-size: 40px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .hero_text{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .hero_text::after{
+        content: " •";
+    }
+
+    #main{
+        height: 570px;
+        scroll-margin-top: 100px;
+    }
+
+    #menu{
+        scroll-margin-top: 130px;
+    }
+
+    #hero_text{
+        margin-top: 20px;
+        gap: 50px;
+    }
+
+    #img{
+        opacity: 0;
+        width: 200px;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .card{
+        width: 90%;
+        max-width:350px;
+    }
+
+    #menu{
+        height: 1925px;
+    }
+
+    .advantages{
+        margin-top: 10px;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #why{
+        height: 815px;
+    }
+
+    #reviews{
+        height: 910px;
+        scroll-margin-top: 100px;
+    }
+
+    .review{
+        padding: 10px;
+        width: 90%;
+    }
+
+    .reviews{
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review:nth-child(2) {
+    transform: translateY(0);
+    }
+
+    #section{
+        height: 570px;
+        flex-direction: column;
+    }
+
+    #forma{
+        margin-bottom: 30px;
+    }
+
+    .form{
+        margin-left: 30px;
+    }
+
+    .form_btn{
+        margin-right: 100px;
+    }
+
+    textarea{
+        width: 140px;
+    }
+
+    #contacts{
+        margin: 10px auto auto auto;
+    }
 }
